@@ -2,7 +2,7 @@
   "name": "purgecss-from-ts",
   "version": "1.0.0",
   "description": "Extracting css selectors from typescript to feed it purgecss as content",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "start": "ts-node src/index.ts"
   },
@@ -24,10 +24,12 @@
   },
   "homepage": "https://github.com/kulagind/purgecss-from-ts#readme",
   "dependencies": {
-    "@swc/core": "^1.5.24"
+    "@swc/core": "^1.5.24",
+    "purgecss": "^6.0.0",
+    "purgecss-from-html": "^6.0.0"
   },
   "devDependencies": {
-    "regenerator-runtime": "^0.14.1",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
